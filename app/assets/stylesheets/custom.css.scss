@@ -1,9 +1,180 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/* UNIVERSAL */
+/****************************
+GENERAL
+****************************/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+/****************************
+HEADING
+****************************/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%
+}
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.75em;
+  margin: -5px 0 0;
+  font-weight: normal;
+}
+
+/****************************
+NAVIGATION
+****************************/
+
+nav {
+  text-align: right;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+/****************************
+FOOTER
+****************************/
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  padding-top: 50px;
+  color: #ccc;
+  clear: both;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+/****************************
+STATIC_PAGE => HOME
+****************************/
 
 
-/* NAV BAR */
 
+/****************************
+STATIC_PAGE => CONTACT
+****************************/
 
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+  background-image: asset-url('phone.png');
+}
+
+.contact-info li.mail a {
+  background-image: asset-url('mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: asset-url('twitter.png');
+}
+
+/****************************
+COLORS
+****************************/
+
+/* site body */
+body {
+  background-color: #46484B; //Late Evening Sky by Steph6
+  color: #EEE6AB; //WHITEF1 by piginox
+}
+
+/* header */
+header {
+  background: #696758; //Moonlit Night by Steph 6
+  border-color: #36393B; //Baggaground by amasian
+}
+
+/* nav background */
+nav {
+  background: #C5BC8E; //Moonlit Cloud by Steph 6
+}
+
+/* logo text */
+h1, h2 {
+  color: #36393B; //Baggaground by amasian
+}
+
+/* links */
+a {
+  color: #C5BC8E; //Moonlit Cloud by Steph 6
+}
+
+/* color for nav link */
+nav a, nav a:visited {
+  color: #36393B; //Baggaground by amasian
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #696768; //Moonlit Night by Steph6
+}
