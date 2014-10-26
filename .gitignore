@@ -20,6 +20,9 @@
 **.orig
 rerun.txt
 
+# Ignore Spring files.
+/spring/*.pid
+
 # Ignore bundler config.
 /.bundle
 
