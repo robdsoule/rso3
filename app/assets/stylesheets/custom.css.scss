@@ -143,8 +143,9 @@ COLORS
 ****************************/
 
 /* site body */
+$banana: #46484B;
 body {
-  background-color: #46484B; //Late Evening Sky by Steph6
+  background-color: $banana; //Late Evening Sky by Steph6
   color: #EEE6AB; //WHITEF1 by piginox
 }
 

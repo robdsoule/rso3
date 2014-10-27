@@ -6,13 +6,7 @@ module ApplicationHelper
     if page.empty?
       base
     else
-      "#{page} => #{base}"
+      "#{page} | #{base}"
     end
-  end
-
-  def timestamp
-    timestamp = Time.now
-    formattedtime = timestamp.strftime("%b, %e %Y AT: %H:%M:%S")
-    puts "#{formattedtime}"
   end
 end
