@@ -10,6 +10,10 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
+
+# NOTE: turbolinks is garbage for the most part. you can do way better
+# with a clientside js framework like angular, backbone, or react.
+# if you remove it just remember to also remove the js include tag from your layout
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'newrelic_rpm'

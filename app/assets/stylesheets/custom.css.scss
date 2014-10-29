@@ -1,14 +1,20 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/****************************
-GENERAL
-****************************/
+// NOTE: sass has a one-line comment syntax (as demonstrated in this comment)
+// which is handy because they get stripped from the compiled stylesheet.
+
+// ****************************
+// GENERAL
+// ****************************
 
 body {
   font-family: 'Open Sans', sans-serif;
 }
 
+  // NOTE: good convention is to alphabetize your rules, which helps prevent accidental duplicates or conflicts
+  // (ex. margin:0 auto; and margin-bottom: 20px; being accidentally set on the same element)
+  // vim has this built in with the :sort command
 #wrapper {
   max-width: 940px;
   margin: 0 auto;
@@ -86,6 +92,26 @@ nav a {
 FOOTER
 ****************************/
 
+// NOTE: be careful with global rules like this--
+// <header>, <footer>, etc can be used in more
+// than once in a page such as:
+//
+//  <header>
+//    page header w/ nav etc
+//  </header>
+//
+//  <main>
+//    <header>
+//      main header
+//    </header>
+//    <footer>
+//      main footer
+//    </footer>
+//  </main>
+//
+//  <footer>
+//    page footer
+//  </footer>
 footer {
   font-size: 0.75em;
   text-align: center;
