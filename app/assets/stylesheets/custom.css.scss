@@ -1,17 +1,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-/****************************
-GENERAL
-****************************/
+// ****************************
+// GENERAL
+// ****************************
 
 body {
   font-family: 'Open Sans', sans-serif;
 }
 
 #wrapper {
-  max-width: 940px;
   margin: 0 auto;
+  max-width: 940px;
   padding: 0 5%;
 }
 
@@ -27,11 +27,11 @@ h3 {
   margin: 0 0 1em 0;
 }
 
-/****************************
-HEADING
-****************************/
+// ****************************
+// NAV_HEADER
+// ****************************
 
-header {
+#nav_header {
   float: left;
   margin: 0 0 30px 0;
   padding: 5px 0 0 0;
@@ -39,32 +39,32 @@ header {
 }
 
 #logo {
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
 h1 {
   font-family: 'Open Sans', sans-serif;
-  margin: 15px 0;
   font-size: 1.75em;
   font-weight: normal;
   line-height: 0.8em;
+  margin: 15px 0;
 }
 
 h2 {
   font-size: 0.75em;
-  margin: -5px 0 0;
   font-weight: normal;
+  margin: -5px 0 0;
 }
 
-/****************************
-NAVIGATION
-****************************/
+// ****************************
+// NAVIGATION
+// ****************************
 
 nav {
-  text-align: right;
-  padding: 10px 0;
   margin: 20px 0 0;
+  padding: 10px 0;
+  text-align: right;
 }
 
 nav ul {
@@ -82,48 +82,48 @@ nav a {
   padding: 15px 10px;
 }
 
-/****************************
-FOOTER
-****************************/
+// ****************************
+// PAGE_FOOTER
+// ****************************
 
-footer {
-  font-size: 0.75em;
-  text-align: center;
-  padding-top: 50px;
-  color: #ccc;
+#page_footer {
   clear: both;
+  color: #ccc;
+  font-size: 0.75em;
+  padding-top: 50px;
+  text-align: center;
 }
 
 .social-icon {
-  width: 20px;
   height: 20px;
   margin: 0 5px;
+  width: 20px;
 }
 
-/****************************
-STATIC_PAGE => HOME
-****************************/
+// ****************************
+// STATIC_PAGE => HOME
+// ****************************
 
 
 
-/****************************
-STATIC_PAGE => CONTACT
-****************************/
+// ****************************
+// STATIC_PAGE => CONTACT
+// ****************************
 
 .contact-info {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   font-size: 0.9em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .contact-info a {
-  display: block;
-  min-height: 20px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
-  padding: 0 0 0 30px;
+  display: block;
   margin: 0 0 10px;
+  min-height: 20px;
+  padding: 0 0 0 30px;
 }
 
 .contact-info li.phone a {
@@ -138,44 +138,52 @@ STATIC_PAGE => CONTACT
   background-image: asset-url('twitter.png');
 }
 
-/****************************
-COLORS
-****************************/
+// ****************************
+// COLORS
+// ****************************
 
-/* site body */
-$banana: #46484B;
+// color variables
+
+
+$color1: #EEE6AB; //Cream ish
+$color2: #C5BC8E; //Tan ish
+$color3: #696758; //Brown-Gray
+$color4: #46484B; //Dark Blueslatish-Gray
+$color5: #36393B; //Dark Gray
+
+//  site body
 body {
-  background-color: $banana; //Late Evening Sky by Steph6
-  color: #EEE6AB; //WHITEF1 by piginox
+  background-color: $color4;
+  color: $color1;
 }
 
-/* header */
+//  header
 header {
-  background: #696758; //Moonlit Night by Steph 6
-  border-color: #36393B; //Baggaground by amasian
+  background: $color3;
+  border-color: $color5;
 }
 
 /* nav background */
 nav {
-  background: #C5BC8E; //Moonlit Cloud by Steph 6
+  background: $color2;
 }
 
-/* logo text */
+// logo text
 h1, h2 {
-  color: #36393B; //Baggaground by amasian
+  color: $color5;
 }
 
-/* links */
+//  links
 a {
-  color: #C5BC8E; //Moonlit Cloud by Steph 6
+  color: $color2;
 }
 
-/* color for nav link */
+//  color for nav link
 nav a, nav a:visited {
-  color: #36393B; //Baggaground by amasian
+  color: $color5;
 }
 
-/* selected nav link */
+//  selected nav link
 nav a.selected, nav a:hover {
-  color: #696768; //Moonlit Night by Steph6
+  color: $color3;
 }
