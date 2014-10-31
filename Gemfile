@@ -2,18 +2,25 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 
 gem 'rails', '4.1.6'
+
 gem 'bootstrap-sass'
 gem 'figaro'
 gem 'pg'
 gem 'unicorn'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
+
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
+gem 'react-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+
 gem 'newrelic_rpm'
 gem 'sdoc', '~> 0.4.0',          group: :doc
+
+#embed JS Interpreter into Ruby
+gem 'therubyracer', platforms: :ruby
 
 group :development, :test do
     gem 'spring'
