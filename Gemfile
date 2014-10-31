@@ -19,8 +19,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'newrelic_rpm'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-#embed JS Interpreter into Ruby
-gem 'therubyracer', platforms: :ruby
+#embed JS Interpreter into Ruby dont use w/ heroku
+#gem 'therubyracer', platforms: :ruby
 
 group :development, :test do
     gem 'spring'
