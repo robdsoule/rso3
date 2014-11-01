@@ -105,6 +105,7 @@ nav a {
   width: 20px;
 }
 
+
 // ****************************
 // STATIC_PAGE => HOME
 // ****************************
@@ -194,5 +195,24 @@ nav a, nav a:visited {
 
 //  selected nav link
 nav a.selected, nav a:hover {
+  text-decoration: none;
   color: $color3;
+}
+
+// ****************************
+// POSTS
+// ****************************
+
+.btn {
+  background-color: $color5;
+  color: $color1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.form-control {
+  background-color: $color5;
+  color: $color1;
+  margin-bottom: 10px;
+  max-width: 45%;
 }
