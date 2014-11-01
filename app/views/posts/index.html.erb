@@ -1,5 +1,6 @@
 <% provide(:title, 'Posts') %>
 
+<%= link_to 'New Post', new_post_path %>
 <%= react_component('PostsList',
                     { initialPosts: @posts },
                     { prerender: params[:noprerender].nil? ? true : false }) %>
