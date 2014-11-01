@@ -3,11 +3,13 @@ ruby '2.1.2'
 
 gem 'rails', '4.1.6'
 
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.3.0'
+gem 'sass-rails', '>= 3.2'
+gem 'autoprefixer-rails'
+
 gem 'figaro'
 gem 'pg'
 gem 'unicorn'
-gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'coffee-rails', '~> 4.0.0'
