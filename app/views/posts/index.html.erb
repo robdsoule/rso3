@@ -1,0 +1,5 @@
+<% provide(:title, 'Posts') %>
+
+<%= react_component('PostsList',
+                    { initialPosts: @posts },
+                    { prerender: params[:noprerender].nil? ? true : false }) %>
