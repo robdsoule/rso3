@@ -7,9 +7,13 @@ body {
 }
 
 #wrapper {
-  margin: 0 auto;
-  max-width: 940px;
-  padding: 0 5%;
+  border-radius: 0em 0em 2em 2em;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  padding: 1% 5%;
+  width: 90%;
 }
 
 a {
@@ -29,10 +33,14 @@ h3 {
 // ****************************
 
 #nav_header {
-  float: left;
-  margin: 0 0 30px 0;
+  border-radius: 2em 2em 0em 0em;
+  float: center;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
   padding: 5px 0 0 0;
-  width: 100%
+  width: 90%;
 }
 
 #logo {
@@ -150,8 +158,12 @@ $color5: #36393B; //Dark Gray
 
 //  site body
 body {
-  background-color: $color4;
+  background-color: $color5;
   color: $color1;
+}
+
+#wrapper {
+  background-color: $color4;
 }
 
 //  header
