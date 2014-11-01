@@ -1,6 +1,8 @@
 <% provide(:title, 'Posts') %>
 
+<div id="content"></div>
 
-<%= react_component('PostsList',
+<%# THIS WORKS BUT TRYING GLOMBBALL
+<%# <%= react_component('PostsList',
                     { initialPosts: @posts },
                     { prerender: params[:noprerender].nil? ? true : false }) %>
