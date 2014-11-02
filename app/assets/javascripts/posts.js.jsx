@@ -142,4 +142,4 @@ $(document).on("page:change", function() {
       document.getElementById('content')
     );
   }
-})
+});
