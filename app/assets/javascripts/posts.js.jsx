@@ -18,11 +18,18 @@ var Post = React.createClass({
   render: function() {
     var rawMarkup = converter.makeHtml(this.props.children.toString());
     return (
-      <div className="post">
-        <h2 className="postAuthor">
-          {this.props.author}
-        </h2>
-        <span dangerouslySetInnerHTML={{__html: rawMarkup}} />
+      <div className="post panel panel-default">
+        <div className="panel-heading">
+          <h1 className="postTitle">
+            {this.props.title}
+          </h1>
+          <h2 className="postAuthor">
+            By: {this.props.author}
+          </h2>
+        </div>
+        <div className="panel-body">
+          <span dangerouslySetInnerHTML={{__html: rawMarkup}} />
+        </div>
       </div>
     );
   }
@@ -72,7 +79,7 @@ var PostBox = React.createClass({
   render: function() {
     return (
       <div className="postBox">
-        <h1>Posts</h1>
+        <h1>Posts:</h1>
         <PostList data={this.state.data} />
         <PostForm onPostSubmit={this.handlePostSubmit} />
       </div>
@@ -103,7 +110,7 @@ var PostList = React.createClass({
 var PostForm = React.createClass({
   handleSubmit: function(e) {
     e.preventDefault();
-    var title = this.refs.author.getDOMNode().value.trim();
+    var title = this.refs.title.getDOMNode().value.trim();
     var author = this.refs.author.getDOMNode().value.trim();
     var contents = this.refs.contents.getDOMNode().value.trim();
     if (!title || !author || !contents) {
@@ -118,10 +125,10 @@ var PostForm = React.createClass({
   render: function() {
     return (
       <form className="postForm" onSubmit={this.handleSubmit}>
-        <input type="text" placeholder="Title" ref="title" />
-        <input type="text" placeholder="Your name" ref="author" />
-        <input type="text" placeholder="Say something..." ref="contents" />
-        <input type="submit" value="Post" />
+        <input className="form-control" input type="text" placeholder="Title" ref="title" />
+        <input className="form-control" input type="text" placeholder="Your name" ref="author" />
+        <input className="form-control" input type="text-area" placeholder="Say something..." ref="contents" />
+        <input className="btn"          input type="submit" value="Post" />
       </form>
     );
   }

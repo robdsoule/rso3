@@ -212,7 +212,25 @@ nav a.selected, nav a:hover {
 
 .form-control {
   background-color: $color5;
+  border-color: $color3;
   color: $color1;
   margin-bottom: 10px;
   max-width: 45%;
 }
+
+.panel {
+  background-color: $color5;
+  border: none;
+  color: $color1;
+}
+
+.postForm {
+  border-color: $color3;
+}
+
+.panel-default > .panel-heading {
+  background-color: $color3;
+  border: none;
+  color: $color4;
+}
+
